@@ -1,0 +1,38 @@
+.navbar {
+  background-color: black !important;
+  border-radius: 25px; /* Oval yapı */
+  padding: 10px 20px; /* İçeriklerin etrafında boşluk */
+  margin: 20px auto; /* Ortalanmayı kaldırmak için margin */
+  max-width: 1000px; /* Genişliği sınırlamak için */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+  margin: 0 15px; /* Bileşenler arası boşluk */
+  transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+.nav-link div {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Navbar içeriğini ortalamamak için */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}

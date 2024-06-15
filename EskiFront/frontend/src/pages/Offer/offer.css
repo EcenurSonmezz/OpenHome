@@ -1,0 +1,96 @@
+Genel stiller
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden; /* Taşmaları önlemek için */
+  background-size: cover;
+}
+
+/* Blur effect for background */
+.blur {
+  filter: blur(5px);
+}
+
+/* Login container stilleri */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+/* Card stilleri */
+.login-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card header stilleri */
+.login-header {
+  background-color: #ff69b4; /* Açık pembe ton */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Form label stilleri */
+.form-label {
+  font-weight: bold;
+}
+
+/* Form kontrol stilleri */
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ff69b4; /* Açık pembe ton */
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+/* Button stilleri */
+.btn-primary {
+  background-color: #ff69b4; /* Açık pembe ton */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff1493; /* Daha koyu pembe ton */
+  transform: scale(1.05);
+}
+
+/* Alert stilleri */
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Slider stilleri
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider .card {
+  flex: 0 0 auto;
+  width: 300px;
+} */

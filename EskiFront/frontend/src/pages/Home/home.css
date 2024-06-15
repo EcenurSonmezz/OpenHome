@@ -1,0 +1,199 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeInOut 6s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+
+.background-container img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.background-container img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.background-container img:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.background-container img:nth-child(4) {
+  animation-delay: 9s;
+}
+
+.background-container img:nth-child(5) {
+  animation-delay: 12s;
+}
+
+.background-container img:nth-child(6) {
+  animation-delay: 15s;
+}
+
+/* Navbar stilleri */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Container stilleri */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 60px; /* Navbar'ın üstte kalması için boşluk bırak */
+}
+
+/* Slider stilleri */
+.offer-slider {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+/* Slider içeriği stilleri */
+.offer-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.offer-card.accepted {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.offer-card.rejected {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.offer-details {
+  height: 100px; /* Yüksekliği ayarlayın */
+}
+
+.offer-actions {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+
+.offer-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.offer-actions button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.offer-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.react-card-slider-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,8 @@
+.background-container {
+    background: url('../../assets/magical.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Tüm ekran yüksekliğini kaplamak için */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

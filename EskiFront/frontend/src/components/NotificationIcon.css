@@ -1,0 +1,49 @@
+.notification-icon-container {
+  position: relative;
+}
+
+.notification-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}
+
+.notification-popup {
+  position: absolute;
+  top: 30px; /* İkonun altına yerleştir */
+  right: 0;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.notification-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.notification-item button {
+  margin-right: 5px;
+}
